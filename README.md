@@ -93,9 +93,9 @@ docker-compose up --build
 
 ## ✅ Future Enhancements
 - Add Shipping Service
-- Implement Saga **Choreography** using Kafka
-- Centralize saga logs
-- Add retries and timeouts
+- Centralize saga logs - because we need to be able to query a whole process 
+  and see where it failed easily a central Saga log is needed
+- Add retries and timeouts ( the bases for the retry func is SagaStep- that's why we store it in db)
 - Dockerize with PostgreSQL for persistence
 
 ---
